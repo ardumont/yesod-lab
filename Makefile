@@ -10,3 +10,12 @@ init: create-db
 
 create-db:
 	~/bin/db/create-mysql-db.sh YESODLAB yesodlab
+
+create-test-db:
+	~/bin/db/create-mysql-db.sh YESODLAB_test yesodlab
+
+test:
+	yesod test
+
+dev:
+	yesod devel

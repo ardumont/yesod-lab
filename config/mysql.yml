@@ -10,15 +10,15 @@ Development:
   <<: *defaults
 
 Testing:
-  database: YESODLAB_test
+  database: YESODLAB_TEST
   <<: *defaults
 
 Staging:
-  database: YESODLAB_staging
+  database: YESODLAB_STAGING
   poolsize: 100
   <<: *defaults
 
 Production:
-  database: YESODLAB_production
+  database: YESODLAB_PRODUCTION
   poolsize: 100
   <<: *defaults
