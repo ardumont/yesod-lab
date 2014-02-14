@@ -19,3 +19,6 @@ test:
 
 dev:
 	yesod devel
+
+add-handler:
+	yesod add-handler
