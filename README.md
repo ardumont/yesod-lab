@@ -5,7 +5,9 @@ Learning yesod through experiences.
 
 # Goal
 
-Learning to create an API with Yesod.
+Learning to create an API with [Yesod](http://www.yesodweb.com/).
+
+As always, I will reference every reproducible step in the Makefile.
 
 # Init
 
