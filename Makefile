@@ -5,5 +5,8 @@ install:
 deps: install
 	cabal update ; cabal install yesod-platform yesod-bin
 
-init:
+init: create-db
 	cabal sandbox init && cabal install --enable-tests && yesod devel
+
+create-db:
+	~/bin/db/create-mysql-db.sh YESODLAB yesodlab

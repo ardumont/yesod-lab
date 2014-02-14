@@ -1,0 +1,24 @@
+Default: &defaults
+  user: yesod-lab
+  password: yesod-lab
+  host: localhost
+  port: 5432
+  database: yesod-lab
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: yesod-lab_test
+  <<: *defaults
+
+Staging:
+  database: yesod-lab_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: yesod-lab_production
+  poolsize: 100
+  <<: *defaults

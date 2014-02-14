@@ -1,0 +1,24 @@
+Default: &defaults
+  user: yesodlab
+  password: yesodlab
+  host: localhost
+  port: 3306
+  database: YESODLAB
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: YESODLAB_test
+  <<: *defaults
+
+Staging:
+  database: YESODLAB_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: YESODLAB_production
+  poolsize: 100
+  <<: *defaults
