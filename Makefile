@@ -5,7 +5,7 @@ install:
 deps: install
 	cabal update ; cabal install yesod-platform yesod-bin
 
-init: create-db
+init: deps create-db
 	cabal sandbox init && cabal install --enable-tests && yesod devel
 
 create-db:
