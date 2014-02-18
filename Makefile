@@ -1,6 +1,6 @@
 install:
-	dpkg -l | grep haskell-platform || sudo apt-get install -y haskell-platform
-	dpkg -l | grep mysql-server || sudo apt-get install -y mysql-server libmysqlclient-dev
+	(aptitude show haskell-platform 2>/dev/null && dpkg -l | grep haskell-platform) || sudo aptitude install -y haskell-platform
+	(aptitude show mysql-server 2>/dev/null && dpkg -l | grep mysql-server) || sudo aptitude install -y mysql-server libmysqlclient-dev
 
 deps: install
 	cabal update ; cabal install yesod-platform yesod-bin
