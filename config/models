@@ -12,5 +12,11 @@ Article
     title Text
     content Html
     deriving
+Profile
+    id Text
+    name Text
+    comment Text
+    UniqueProfile id
+    deriving
 
- -- By default this file is used in Model.hs (which is imported by Foundation.hs)
+-- By default this file is used in Model.hs (which is imported by Foundation.hs)
