@@ -13,10 +13,17 @@ Article
     content Html
     deriving
 Profile
-    id Text
+    ident Text
     name Text
     comment Text
-    UniqueProfile id
+    UniqueProfile ident
+    deriving
+Teacher
+    ident Text
+    profile ProfileId Maybe
+    name Text
+    pwd Text
+    UniqueTeacher ident
     deriving
 
 -- By default this file is used in Model.hs (which is imported by Foundation.hs)
