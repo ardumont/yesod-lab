@@ -24,6 +24,7 @@ library
                      Handler.Mirror
                      Handler.Blog
                      Handler.Article
+                     Handler.Profiles
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
